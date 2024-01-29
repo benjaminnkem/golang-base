@@ -18,21 +18,28 @@ func calculateCircumference(radius float64) float64 {
 }
 
 func main() {
+	// var firstName string = "Benjamin"
+	// lastName := "Nkem"
 
-	var firstName string = "Benjamin"
-	lastName := "Nkem"
+	// fmt.Println(firstName, lastName)
 
-	fmt.Println(firstName, lastName)
+	// var age int8 = 100
+	// fmt.Println(age)
 
-	var age int8 = 100
-	fmt.Println(age)
+	// gpa := 0.5
+	// fmt.Println(gpa)
 
-	gpa := 0.5
-	fmt.Println(gpa)
+	// somethingElse()
+	// greet("Benjamin Nkem")
 
-	somethingElse()
-	greet("Benjamin Nkem")
+	// result := calculateCircumference(30)
+	// fmt.Println(result)
 
-	result := calculateCircumference(30)
-	fmt.Println(result)
+	var ageOne int8 = 20
+
+	// uint - you can't have a negative number
+	var num uint8 = 30
+
+	fmt.Println(ageOne, num)
+
 }
