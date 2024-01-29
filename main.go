@@ -2,44 +2,32 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
-func somethingElse() {
-	fmt.Println("this is ran from the 'something else' function.")
-}
-
-func greet(name string) {
-	fmt.Println("Hello,", name)
-}
-
-func calculateCircumference(radius float64) float64 {
-	return 2 * math.Pi * radius
-}
-
 func main() {
-	// var firstName string = "Benjamin"
-	// lastName := "Nkem"
 
-	// fmt.Println(firstName, lastName)
+	age := 18
+	name := "Benjamin"
+	points := 4.5
 
-	// var age int8 = 100
-	// fmt.Println(age)
+	//  Print
+	fmt.Print("Hello, ")
+	fmt.Print("World \n")
+	fmt.Print("new line \n")
 
-	// gpa := 0.5
-	// fmt.Println(gpa)
+	// Println
+	fmt.Println("Some random string")
+	fmt.Println("anther random string")
 
-	// somethingElse()
-	// greet("Benjamin Nkem")
+	fmt.Println("My age is", age, "and my name is", name)
 
-	// result := calculateCircumference(30)
-	// fmt.Println(result)
-
-	var ageOne int8 = 20
-
-	// uint - you can't have a negative number
-	var num uint8 = 30
-
-	fmt.Println(ageOne, num)
+	// Printf (Formatted strings) %_ = format specifier
+	fmt.Printf("My age is %v and my name is %v\n", age, name)
+	fmt.Printf("My age is %q and my name is %q\n", age, name) // does not work for int
+	fmt.Printf("age is of type %T\n", age)
+	fmt.Printf("type: score is %T\n", points)
+	fmt.Printf("you scored %0.1f points!\n", points)
+	fmt.Printf("you scored %T points!\n", points)
+	fmt.Printf("binary of %d is %b\n", age, age) // convert to binary
 
 }
