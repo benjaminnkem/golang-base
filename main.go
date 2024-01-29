@@ -30,4 +30,8 @@ func main() {
 	fmt.Printf("you scored %T points!\n", points)
 	fmt.Printf("binary of %d is %b\n", age, age) // convert to binary
 
+	// Sprintf (save formatted string)
+	formStr := fmt.Sprintf("My age is %v and my name is %v\n", age, name)
+
+	fmt.Println(formStr)
 }
