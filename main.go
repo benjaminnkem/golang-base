@@ -6,32 +6,33 @@ import (
 
 func main() {
 
-	age := 18
-	name := "Benjamin"
-	points := 4.5
+	// var ages [3]int = [3]int{1, 2, 3} // has a fixed length
+	var ages = [3]int{1, 2, 3}
 
-	//  Print
-	fmt.Print("Hello, ")
-	fmt.Print("World \n")
-	fmt.Print("new line \n")
+	names := [4]string{"benjamin", "tochi", "junior", "nkem"}
 
-	// Println
-	fmt.Println("Some random string")
-	fmt.Println("anther random string")
+	names[1] = "francis"
 
-	fmt.Println("My age is", age, "and my name is", name)
+	fmt.Println(ages, len(ages))
+	fmt.Println(names, len(names))
 
-	// Printf (Formatted strings) %_ = format specifier
-	fmt.Printf("My age is %v and my name is %v\n", age, name)
-	fmt.Printf("My age is %q and my name is %q\n", age, name) // does not work for int
-	fmt.Printf("age is of type %T\n", age)
-	fmt.Printf("type: score is %T\n", points)
-	fmt.Printf("you scored %0.1f points!\n", points)
-	fmt.Printf("you scored %T points!\n", points)
-	fmt.Printf("binary of %d is %b\n", age, age) // convert to binary
+	// slices (use arrays under the hood)
+	var scores = []int{100, 50, 60}
+	scores[2] = 30
 
-	// Sprintf (save formatted string)
-	formStr := fmt.Sprintf("My age is %v and my name is %v\n", age, name)
+	scores = append(scores, 34)
 
-	fmt.Println(formStr)
+	fmt.Println(scores)
+
+	// slice ranges
+	rangeOne := names[1:3]
+	rangeTwo := names[2:]
+	rangeThree := names[:3]
+
+	fmt.Println(rangeOne, rangeTwo, rangeThree)
+
+	rangeOne = append(rangeOne, "cooper")
+
+	fmt.Println(rangeOne)
+
 }
