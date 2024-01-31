@@ -1,38 +1,28 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
-	// var ages [3]int = [3]int{1, 2, 3} // has a fixed length
-	var ages = [3]int{1, 2, 3}
+	// i := 0
 
-	names := [4]string{"benjamin", "tochi", "junior", "nkem"}
+	// for i < 50 {
+	// 	fmt.Println(i)
+	// 	i++
+	// }
 
-	names[1] = "francis"
+	// for i := 1; i <= 50; i++ {
+	// 	fmt.Println(i)
+	// }
 
-	fmt.Println(ages, len(ages))
-	fmt.Println(names, len(names))
+	names := []string{"benjamin", "tochi", "junior", "nkem"}
 
-	// slices (use arrays under the hood)
-	var scores = []int{100, 50, 60}
-	scores[2] = 30
+	for i := 0; i < len(names); i++ {
+		fmt.Println(names[i])
+	}
 
-	scores = append(scores, 34)
-
-	fmt.Println(scores)
-
-	// slice ranges
-	rangeOne := names[1:3]
-	rangeTwo := names[2:]
-	rangeThree := names[:3]
-
-	fmt.Println(rangeOne, rangeTwo, rangeThree)
-
-	rangeOne = append(rangeOne, "cooper")
-
-	fmt.Println(rangeOne)
+	// for index, value range names {
+	// 	fmt.Println("the index is %v and value is %v", index, value)
+	// }
 
 }
