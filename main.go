@@ -2,15 +2,17 @@ package main
 
 import "fmt"
 
-var score = 30
-
 func main() {
 
-	sayHello("benjamin")
-
-	for _, v := range points {
-		fmt.Println(v)
+	menu := map[string]float64{
+		"pizza":  1.11,
+		"garri":  20.99,
+		"rice":   4.99,
+		"tomato": 2.99,
 	}
 
-	showScore()
+	for k, v := range menu {
+		fmt.Println(k, "-", v)
+	}
+
 }
