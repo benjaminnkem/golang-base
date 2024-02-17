@@ -24,8 +24,11 @@ func createBill() bill {
 
 func main() {
 
-	myBill := createBill()
+	// myBill := createBill()
+	// fmt.Println(myBill)
 
-	fmt.Println(myBill)
+	ben := createUser("benjamin", 40)
+
+	fmt.Print(ben)
 
 }
